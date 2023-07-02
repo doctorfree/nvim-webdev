@@ -1,4 +1,4 @@
-local settings = require("settings")
+local settings = require("configuration")
 local codeium = {}
 local lualine = { "nvim-lualine/lualine.nvim" }
 

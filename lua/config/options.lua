@@ -2,6 +2,11 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 --
+-- Use leader key settings in configuration.lua
+local settings = require("configuration")
+vim.g.mapleader = settings.mapleader
+vim.g.maplocalleader = settings.maplocalleader
+--
 -- UFO folding
 vim.o.foldcolumn = "1" -- '0' is not bad
 vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
