@@ -1,6 +1,9 @@
-return {
-  -- Add codeium, make sure that you ran :Codeium Auth after installation.
-  {
+local settings = require("settings")
+local codeium = {}
+local lualine = { "nvim-lualine/lualine.nvim" }
+
+if settings.enable_codeium then
+  codeium = {
     "Exafunction/codeium.vim",
     config = function()
       vim.keymap.set("i", "<Tab>", function()
@@ -16,7 +19,23 @@ return {
         return vim.fn["codeium#Clear"]()
       end, { expr = true })
     end,
-  },
+  }
+  -- Add Codeium status to lualine
+  lualine = {
+    "nvim-lualine/lualine.nvim",
+    opts = function(_, opts)
+      table.insert(opts.sections.lualine_x, 2, {
+        function()
+          return vim.fn["codeium#GetStatusString"]()
+        end,
+      })
+    end,
+  }
+end
+
+return {
+  -- Add codeium, make sure that you ran :Codeium Auth after installation.
+  codeium,
   -- Disable default <tab> and <s-tab> behavior in LuaSnip
   {
     "L3MON4D3/LuaSnip",
@@ -107,17 +126,7 @@ return {
       })
     end,
   },
-  -- Add Codeium status to lualine
-  {
-    "nvim-lualine/lualine.nvim",
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, 2, {
-        function()
-          return vim.fn["codeium#GetStatusString"]()
-        end,
-      })
-    end,
-  },
+  lualine,
   -- Jsdoc
   {
     "heavenshell/vim-jsdoc",
