@@ -33,6 +33,14 @@ if settings.enable_codeium then
   }
 end
 
+local wakatime_type = {}
+if settings.enable_wakatime then
+  wakatime_type = {
+    "wakatime/vim-wakatime",
+    lazy = false
+  }
+end
+
 return {
   -- Add codeium, make sure that you ran :Codeium Auth after installation.
   codeium,
@@ -149,4 +157,5 @@ return {
       },
     },
   },
+  wakatime_type,
 }
