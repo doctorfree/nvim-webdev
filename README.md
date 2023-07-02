@@ -1,4 +1,10 @@
 <h1 align="center">Welcome to nvim-for-webdev 👋</h1>
+
+<p>
+**[Note:]** This Neovim configuration is based on the starter template at
+https://github.com/jellydn/nvim-for-webdev and is extensively enhanced for
+use with [Lazyman](https://github.com/doctorfree/nvim-lazyman).
+</p>
 <p>
 Are you a web developer working with JS, Typescript, React, and Tailwind CSS? Check out the Neovim and LazyVim plugin starter template!
 </p>
@@ -82,7 +88,13 @@ This IDE setup includes several plugins for Neovim that provide features such as
 [![IT Man - Tip #38 - Learning Vim with VSCode - A Comprehensive Guide [Vietnamese]](https://i.ytimg.com/vi/yTTPRm0ACl0/hqdefault.jpg)](https://www.youtube.com/watch?v=yTTPRm0ACl0)
 
 
-## Author
+## Authors
+
+👤 **Ronald Joe Record**
+
+- Website: https://ronrecord.com/
+- Twitter: [@ronrecord](https://twitter.com/ronrecord)
+- Github: [@doctorfree](https://github.com/doctorfree)
 
 👤 **Huynh Duc Dung**
 
@@ -94,6 +106,5 @@ This IDE setup includes several plugins for Neovim that provide features such as
 
 Give a ⭐️ if this project helped you!
 
-[![kofi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/dunghd)
-[![paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/dunghd)
-[![buymeacoffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/dunghd)
+[![paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/ronrecord)
+[![buymeacoffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/doctorfree)
