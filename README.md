@@ -19,37 +19,24 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 Find detailed resources for each plugin in the accompanying readme. Start your web development journey with Neovim and LazyVim today!
 
-## Install Neovim
+## Install Lazyman
 
-The easy way is using [MordechaiHadad/bob: A version manager for neovim](https://github.com/MordechaiHadad/bob).
-
-```sh
-bob install stable
-bob use stable
+```bash
+git clone https://github.com/doctorfree/nvim-lazyman $HOME/.config/nvim-Lazyman
+$HOME/.config/nvim-Lazyman/lazyman.sh
 ```
 
-## Install the config
+## Install the Webdev Neovim configuration
 
-Make sure to remove or move your current `nvim` directory
-
-```sh
-git clone https://github.com/jellydn/nvim-for-webdev.git ~/.config/nvim
-rm -rf ~/.config/nvim/.git
+```bash
+lazyman -w Webdev
 ```
 
-You should restart Neovim to apply the changes after installing the starter template.
+## Configure the shell environment
 
-## Extra plugins from LazyVim
-
-Add below plugins to [lazy.lua](./lua/config/lazy.lua), more detail on https://www.lazyvim.org/plugins
-
-```lua
-    { import = "lazyvim.plugins.extras.util.project" },
-    { import = "lazyvim.plugins.extras.lang.typescript" },
-    { import = "lazyvim.plugins.extras.lang.json" },
-    { import = "lazyvim.plugins.extras.lang.tailwind" },
-    { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.formatting.prettier" },
+```bash
+export NVIM_APPNAME="nvim-Webdev"
+alias wvim="NVIM_APPNAME=nvim-Webdev nvim"
 ```
 
 ## [Keymaps](./lua/config/keymaps.lua)
