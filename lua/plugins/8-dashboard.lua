@@ -20,13 +20,13 @@ return {
     local session_btn =
       dashboard.button("s", "勒" .. " Last Session", [[:lua require("persistence").load({ last = true }) <cr>]])
     session_btn.opts.hl = "AlphaButton"
-    local health_btn = dashboard.button("h", "  Neovim Health", ":checkhealth<CR>")
-    health_btn.opts.hl = "AlphaShortcut"
     local settings_btn = dashboard.button("c", "  Webdev Configuration", ":e " .. configuration_lua .. "<CR>")
     if settings.enable_terminal then
       settings_btn = dashboard.button("c", "  Webdev Configuration", ":Webdev<CR>")
     end
-    settings_btn.opts.hl = "AlphaButton"
+    settings_btn.opts.hl = "AlphaShortcut"
+    local health_btn = dashboard.button("h", "  Neovim Health", ":checkhealth<CR>")
+    health_btn.opts.hl = "AlphaButton"
     local lazy_btn = dashboard.button("l", "鈴" .. " Lazy", ":Lazy<CR>")
     lazy_btn.opts.hl = "AlphaShortcut"
     local quit_btn = dashboard.button("q", " " .. " Quit", ":qa<CR>")
