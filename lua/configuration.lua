@@ -81,13 +81,8 @@ conf.enable_codeium = false
 -- Enable the header of the dashboard
 conf.enable_dashboard_header = true
 -- File explorer tree plugin: neo-tree, nvim-tree, or none
+-- [Note:] Here only for theme configs, Neotree is the default in LazyVim
 conf.file_tree = "neo-tree"
--- Replace the UI for messages, cmdline and the popupmenu
-conf.enable_noice = true
--- Enable 'StartupTime' command
-conf.enable_startuptime = true
--- Add/change/delete surrounding delimiter pairs with ease
-conf.enable_surround = true
 -- Enable statusline (lualine)
 conf.enable_statusline = true
 -- Enable tabline
