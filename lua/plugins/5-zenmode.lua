@@ -64,7 +64,7 @@ if settings.enable_zenmode then
         vim.g.indent_blankline_enabled = false
       end,
       on_close = function()
-        vim.diagnostic.config(require("config.lsp.diagnostics")["off"])
+        vim.diagnostic.config(require("config.lsp.diagnostics")["on"])
         vim.g.indent_blankline_enabled = true
       end,
     }
