@@ -82,27 +82,14 @@ conf.enable_codeium = true
 conf.file_tree = "neo-tree"
 -- Replace the UI for messages, cmdline and the popupmenu
 conf.enable_noice = true
--- Enable smart column display
-conf.enable_smartcolumn = true
 -- Enable 'StartupTime' command
 conf.enable_startuptime = true
 -- Add/change/delete surrounding delimiter pairs with ease
 conf.enable_surround = true
--- Enable fancy lualine components
-conf.enable_fancy = false
--- Enable the wilder plugin
-conf.enable_wilder = false
--- The statusline (lualine), tabline, and winbar can each be enabled or disabled
 -- Enable statusline (lualine)
 conf.enable_statusline = true
 -- Enable tabline
 conf.enable_tabline = true
--- Enable winbar with navic location
--- Can be one of "barbecue", "standard", or "none"
--- Barbecue provides a clickable navic location, standard has more info
-conf.enable_winbar = "standard"
--- Enable LSP progress in winbar
-conf.enable_lualine_lsp_progress = true
 -- Enable rebelot/terminal.nvim
 conf.enable_terminal = true
 -- Enable toggleterm plugin
