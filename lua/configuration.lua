@@ -40,11 +40,11 @@ conf.maplocalleader = ","
 -- Toggle global status line
 conf.global_statusline = true
 -- set numbered lines
-conf.number = false
+conf.number = true
 -- enable mouse see :h mouse
 conf.mouse = "nv"
 -- set relative numbered lines
-conf.relative_number = false
+conf.relative_number = true
 -- always show tabs; 0 never, 1 only if at least two tab pages, 2 always
 -- see enable_tabline below to disable or enable the tabline plugin
 conf.showtabline = 2
