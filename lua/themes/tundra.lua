@@ -70,13 +70,11 @@ if settings.theme == "tundra" then
     vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { link = "NvimTreeNormalNC" })
     vim.api.nvim_set_hl(0, "NeoTreeSymbolicLinkTarget", { link = "NvimTreeSymlink" })
   end
-  if settings.dashboard == "alpha" then
-    vim.api.nvim_set_hl(0, "AlphaHeader", { link = "DiagnosticError" })
-    vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "DiagnosticError" })
-    vim.api.nvim_set_hl(0, "AlphaButtons", { link = "DiagnosticWarn" })
-    vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "DiagnosticInfo" })
-    vim.api.nvim_set_hl(0, "AlphaFooter", { link = "DiagnosticHint" })
-  end
+  vim.api.nvim_set_hl(0, "AlphaHeader", { link = "DiagnosticError" })
+  vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "DiagnosticError" })
+  vim.api.nvim_set_hl(0, "AlphaButtons", { link = "DiagnosticWarn" })
+  vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "DiagnosticInfo" })
+  vim.api.nvim_set_hl(0, "AlphaFooter", { link = "DiagnosticHint" })
   local utils = require("utils.functions")
   utils.map("n", "<leader>ut", ":Tundra toggle_transparency<CR>",
     { desc = "Toggle Transparency" })

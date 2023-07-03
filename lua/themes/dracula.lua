@@ -168,13 +168,11 @@ end
 
 if settings.theme == "dracula" then
   vim.cmd([[colorscheme dracula]])
-  if settings.dashboard == "alpha" then
-    vim.api.nvim_set_hl(0, "AlphaHeader", { link = "Type" })
-    vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "Type" })
-    vim.api.nvim_set_hl(0, "AlphaButtons", { link = "Keyword" })
-    vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "String" })
-    vim.api.nvim_set_hl(0, "AlphaFooter", { link = "Comment" })
-  end
+  vim.api.nvim_set_hl(0, "AlphaHeader", { link = "Type" })
+  vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "Type" })
+  vim.api.nvim_set_hl(0, "AlphaButtons", { link = "Keyword" })
+  vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "String" })
+  vim.api.nvim_set_hl(0, "AlphaFooter", { link = "Comment" })
   if settings.file_tree == "neo-tree" then
     vim.api.nvim_set_hl(0, "NeoTreeNormal", { link = "NvimTreeNormal" })
     vim.api.nvim_set_hl(0, "NeoTreeVertSplit", { link = "NvimTreeVertSplit" })

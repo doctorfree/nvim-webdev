@@ -48,24 +48,9 @@ require("nightfox").setup({
 if settings.theme == "nightfox" then
   local style = settings.theme_style
   set_colorscheme(style)
-  if settings.dashboard == "alpha" then
-    vim.api.nvim_set_hl(0, "AlphaHeader", { link = "DashboardHeader" })
-    vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "DashboardHeader" })
-    vim.api.nvim_set_hl(0, "AlphaButtons", { link = "DashboardCenter" })
-    vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "DashboardShortcut" })
-    vim.api.nvim_set_hl(0, "AlphaFooter", { link = "DashboardFooter" })
-  end
-  -- Not yet working, may need to clear and/or update cache
-  -- local opts = require("nightfox.config").options
-  -- vim.g.nightfox_transparent = opts.transparent
-  -- local utils = require("utils.functions")
-  -- utils.map("n", "<leader>ut", function()
-  --   vim.g.nightfox_transparent = not vim.g.nightfox_transparent
-  --   opts.transparent = vim.g.nightfox_transparent
-  --   require("nightfox").setup({ options = opts })
-  --   require('nightfox').compile()
-  --   local sett = require("configuration")
-  --   local styl = sett.theme_style
-  --   set_colorscheme(styl)
-  -- end, { desc = "Toggle Transparency" })
+  vim.api.nvim_set_hl(0, "AlphaHeader", { link = "DashboardHeader" })
+  vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "DashboardHeader" })
+  vim.api.nvim_set_hl(0, "AlphaButtons", { link = "DashboardCenter" })
+  vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "DashboardShortcut" })
+  vim.api.nvim_set_hl(0, "AlphaFooter", { link = "DashboardFooter" })
 end

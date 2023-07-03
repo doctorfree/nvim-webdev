@@ -56,24 +56,9 @@ if settings.theme == "kanagawa" then
     vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { link = "NvimTreeNormalNC" })
     vim.api.nvim_set_hl(0, "NeoTreeSymbolicLinkTarget", { link = "NvimTreeSymlink" })
   end
-  if settings.dashboard == "alpha" then
-    vim.api.nvim_set_hl(0, "AlphaHeader", { link = "NvimTreeGitStaged" })
-    vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "NvimTreeGitStaged" })
-    vim.api.nvim_set_hl(0, "AlphaButtons", { link = "NvimTreeImageFile" })
-    vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "NvimTreeSymlink" })
-    vim.api.nvim_set_hl(0, "AlphaFooter", { link = "NvimTreeSpecialFile" })
-  end
-  -- Not yet working, may need to clear and/or update cache
-  -- local kopts = require("kanagawa").config
-  -- vim.g.kanagawa_transparent = kopts.transparent
-  -- local utils = require("utils.functions")
-  -- utils.map("n", "<leader>ut", function()
-  --  vim.g.kanagawa_transparent = not vim.g.kanagawa_transparent
-  --  kopts.transparent = vim.g.kanagawa_transparent
-  --  require("kanagawa").setup( kopts )
-  --  vim.cmd.KanagawaCompile()
-  --  local sett = require("configuration")
-  --  local styl = sett.theme_style
-  --  set_colorscheme(styl)
-  -- end, { desc = "Toggle Transparency" })
+  vim.api.nvim_set_hl(0, "AlphaHeader", { link = "NvimTreeGitStaged" })
+  vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "NvimTreeGitStaged" })
+  vim.api.nvim_set_hl(0, "AlphaButtons", { link = "NvimTreeImageFile" })
+  vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "NvimTreeSymlink" })
+  vim.api.nvim_set_hl(0, "AlphaFooter", { link = "NvimTreeSpecialFile" })
 end

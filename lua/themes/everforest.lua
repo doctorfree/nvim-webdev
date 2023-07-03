@@ -26,13 +26,11 @@ require("everforest").setup({
 -- setup must be called before loading
 if settings.theme == "everforest" then
   vim.cmd([[colorscheme everforest]])
-  if settings.dashboard == "alpha" then
-    vim.api.nvim_set_hl(0, "AlphaHeader", { link = "DashboardHeader" })
-    vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "DashboardHeader" })
-    vim.api.nvim_set_hl(0, "AlphaButtons", { link = "DashboardCenter" })
-    vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "DashboardShortcut" })
-    vim.api.nvim_set_hl(0, "AlphaFooter", { link = "DashboardFooter" })
-  end
+  vim.api.nvim_set_hl(0, "AlphaHeader", { link = "DashboardHeader" })
+  vim.api.nvim_set_hl(0, "AlphaHeaderLabel", { link = "DashboardHeader" })
+  vim.api.nvim_set_hl(0, "AlphaButtons", { link = "DashboardCenter" })
+  vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "DashboardShortcut" })
+  vim.api.nvim_set_hl(0, "AlphaFooter", { link = "DashboardFooter" })
   local opts = require("everforest").config
   vim.g.everforest_transparent = opts.transparent_background_level
   local utils = require("utils.functions")

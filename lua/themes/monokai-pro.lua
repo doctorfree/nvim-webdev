@@ -77,9 +77,7 @@ require("monokai-pro").setup({
 
 if settings.theme == "monokai-pro" then
   vim.cmd([[colorscheme monokai-pro]])
-  if settings.dashboard == "alpha" then
-    vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "DashboardShortcut" })
-  end
+  vim.api.nvim_set_hl(0, "AlphaShortcut", { link = "DashboardShortcut" })
   local mopts = require("monokai-pro.config").options
   vim.g.monokaipro_transparent = mopts.transparent_background
   local utils = require("utils.functions")
