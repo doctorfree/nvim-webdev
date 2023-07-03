@@ -7,7 +7,6 @@ end
 local cfg = {
   debug = false, -- set to true to enable debug logging
   log_path = vim.fn.stdpath("cache") .. "/lsp_signature.log", -- log dir when debug is on
-  -- default is  ~/.cache/nvim/lsp_signature.log
   verbose = false, -- show debug line number
   bind = true, -- This is mandatory, otherwise border config won't get registered.
   -- If you want to hook lspsaga or other signature handler, pls set to false
