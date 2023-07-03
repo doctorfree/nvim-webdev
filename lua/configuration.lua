@@ -76,8 +76,10 @@ conf.enable_copilot = false
 -- Enable Neoai, https://github.com/Bryley/neoai.nvim
 conf.enable_neoai = false
 -- Enable Codeium, https://codeium.com
-conf.enable_codeium = true
+conf.enable_codeium = false
 --
+-- Enable the header of the dashboard
+conf.enable_dashboard_header = false
 -- File explorer tree plugin: neo-tree, nvim-tree, or none
 conf.file_tree = "neo-tree"
 -- Replace the UI for messages, cmdline and the popupmenu
