@@ -79,7 +79,7 @@ conf.enable_neoai = false
 conf.enable_codeium = false
 --
 -- Enable the header of the dashboard
-conf.enable_dashboard_header = false
+conf.enable_dashboard_header = true
 -- File explorer tree plugin: neo-tree, nvim-tree, or none
 conf.file_tree = "neo-tree"
 -- Replace the UI for messages, cmdline and the popupmenu
