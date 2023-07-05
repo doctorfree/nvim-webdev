@@ -89,8 +89,6 @@ conf.enable_statusline = true
 conf.enable_tabline = true
 -- Enable rebelot/terminal.nvim
 conf.enable_terminal = true
--- Enable toggleterm plugin
-conf.enable_toggleterm = true
 -- Enable the WakaTime metrics dashboard (requires API key)
 conf.enable_wakatime = false
 -- Enable zen mode distraction-free coding
