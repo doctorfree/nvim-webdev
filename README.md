@@ -33,7 +33,7 @@ $HOME/.config/nvim-Lazyman/lazyman.sh
 ## Install the Webdev Neovim configuration
 
 ```bash
-lazyman -w Webdev
+lazyman -L Webdev
 ```
 
 ## Configure the shell environment
