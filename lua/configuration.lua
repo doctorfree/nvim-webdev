@@ -101,28 +101,13 @@ conf.enable_wezterm = false
 conf.enable_smooth_scrolling = true
 -- treesitter parsers to be installed
 conf.treesitter_ensure_installed = {
-  "bash",
-  "c",
-  "go",
-  "html",
-  "java",
-  "javascript",
-  "json",
   "lua",
-  "luadoc",
-  "luap",
   "markdown",
   "markdown_inline",
   "query",
-  "python",
   "regex",
-  "rust",
-  "toml",
-  "tsx",
-  "typescript",
   "vim",
   "vimdoc",
-  "yaml",
 }
 -- enable greping in hidden files
 conf.telescope_grep_hidden = true
