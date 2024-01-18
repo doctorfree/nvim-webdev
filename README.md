@@ -152,7 +152,7 @@ This IDE setup includes several plugins for Neovim that provide features such as
 ### Language Servers
 
 + `html`
-+ `s`velte
++ `svelte`
 
 ## Resources
 
